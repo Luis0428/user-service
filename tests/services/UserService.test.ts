@@ -30,4 +30,23 @@ describe('UserService Test', () => {
     });
   });
 
+  describe('update', async() => {
+    it('should return one user', async () => {
+      let user={
+        id:0,
+        name: 'Gerardo',
+        email: 'bis980428@gmail.com'
+      }
+      let response: any[] = await UserService.update(1,user);
+      expect(response[0]).equal(1);
+    });
+  });
+
+  describe('Delete', async() => {
+    it('should return one user', async () => {
+      let response: number = await UserService.deleteUser(2);
+      expect(response).equal(1);
+    });
+  });
+
 });

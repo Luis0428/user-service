@@ -20,7 +20,7 @@ interface IConfig {
 const NODE_ENV: string = process.env.NODE_ENV || 'development';
 
 const development: IConfig = {
-    port: process.env.PORT || 9100,
+    port: process.env.PORT || 9101,
     database: {
         DB_DIALECT: 'postgres',
         DB_NAME: process.env.DB_NAME || 'project',
@@ -33,7 +33,7 @@ const development: IConfig = {
 };
 
 const production: IConfig = {
-    port: process.env.PORT || 9100,
+    port: process.env.PORT || 9101,
     database: {
         DB_DIALECT: 'postgres',
         DB_NAME: process.env.DB_NAME || 'project',
@@ -46,7 +46,7 @@ const production: IConfig = {
 };
 
 const test: IConfig = {
-    port: process.env.PORT || 9100,
+    port: process.env.PORT || 9101,
     database: {
         DB_DIALECT: 'sqlite',
         DB_STORAGE: process.env.DB_STORAGE || ':memory:'

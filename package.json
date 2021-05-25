@@ -44,7 +44,7 @@
     "nyc": "^15.1.0",
     "source-map-support": "^0.5.19",
     "sqlite3": "^5.0.0",
-    "swagger-jsdoc": "^4.0.0",
+    "swagger-jsdoc": "^4.3.2",
     "swagger-ui-express": "^4.1.4",
     "ts-node": "^9.0.0",
     "ts-sinon": "^2.0.1",

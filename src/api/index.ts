@@ -6,7 +6,7 @@ import cors from 'cors';
 let swaggerDoc: Object;
 
 try {
-    swaggerDoc = require('../../swagger.json');
+    swaggerDoc = require('../../../swagger.json');
 } catch (error) {
     console.log('***************************************************');
     console.log('  Seems like you doesn\`t have swagger.json file');
@@ -39,7 +39,7 @@ export function init(app: express.Application): void {
      * @description Forwards any requests to the /auth URI to our AuthRouter
      * @constructs
      */
-    app.use('/', UserRouter);
+    app.use('/users', UserRouter);
 
     /**
      * @description

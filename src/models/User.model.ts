@@ -1,8 +1,10 @@
-import {Table, Column, Model, HasMany, PrimaryKey} from 'sequelize-typescript';
+import {Table, Column, Model, HasMany, PrimaryKey, AutoIncrement} from 'sequelize-typescript';
+import { Col } from 'sequelize/types/lib/utils';
 
 export interface IUsers {
-    id: number
+    id?: number
     name: string
+    email: string
 }
 
 @Table({
@@ -10,10 +12,14 @@ export interface IUsers {
 })
 export default class Users extends Model implements IUsers {
 
+    @AutoIncrement
     @PrimaryKey
     @Column
     id!: number
 
     @Column
     name!: string
+
+    @Column
+    email!: string
 }

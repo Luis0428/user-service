@@ -34,7 +34,7 @@ Middleware.initErrorHandler(app);
 /**
  * sets port 9100 to default or unless otherwise specified in the environment
  */
-app.set('port', process.env.PORT || 9100);
+app.set('port', process.env.PORT || 9101);
 
 /**
  * sets secret to 'superSecret', otherwise specified in the environment

@@ -8,7 +8,7 @@ module.exports = {
         description: 'Microservice User API',
     },
     servers: [
-        { url: 'http://localhost:9100' }
+        { url: 'http://localhost:9101' }
     ],
     apis: [path.join(__dirname, './src/**/**/*.ts')]
 };
